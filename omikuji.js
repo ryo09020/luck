@@ -1,6 +1,11 @@
 let user;
 let usresult;
 user=prompt("お名前は？");
+
+if(user==""){
+    user="名無し"
+}
+
 document.getElementById("name").innerHTML=user;
 
 let rand=Math.floor(Math.random()*5);
